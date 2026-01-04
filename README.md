@@ -35,6 +35,24 @@ The project is built with a strong focus on **methodological correctness**, **fr
   - Structured investment reports (Markdown export)
   - Explainability-first approach
 
+## Future Development
+
+- Rolling beta estimation (12–36 months)
+- Efficient frontier visualization
+- Blended expected returns:
+  - Historical mean
+  - CAPM-based expectations
+- Advanced risk metrics:
+  - Maximum drawdown
+  - Value at Risk (VaR)
+  - Conditional VaR (CVaR)
+- Portfolio turnover constraints
+- Regime detection (bull / bear markets)
+- Performance attribution analysis
+- Backtesting framework with transaction costs
+- Modular API for future SaaS integration
+
+
 ---
 
 ## Project Architecture
@@ -58,21 +76,3 @@ AquilaQuant/
 ├── config.py               # Configuration and parameters
 └── README.md
 
-
-
-## Future Development
-
-- Rolling beta estimation (12–36 months)
-- Efficient frontier visualization
-- Blended expected returns:
-  - Historical mean
-  - CAPM-based expectations
-- Advanced risk metrics:
-  - Maximum drawdown
-  - Value at Risk (VaR)
-  - Conditional VaR (CVaR)
-- Portfolio turnover constraints
-- Regime detection (bull / bear markets)
-- Performance attribution analysis
-- Backtesting framework with transaction costs
-- Modular API for future SaaS integration

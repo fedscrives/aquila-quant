@@ -1,0 +1,13 @@
+# --- ANALISI DATI E FINANZA ---
+pandas
+numpy
+yfinance
+pandas-datareader
+setuptools
+
+# --- CALCOLO SCIENTIFICO E OTTIMIZZAZIONE ---
+scipy
+matplotlib
+
+# --- INTEGRAZIONE IA ---
+ollama

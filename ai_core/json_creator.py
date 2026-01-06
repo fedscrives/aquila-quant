@@ -79,6 +79,20 @@ class JsonCreator:
     @staticmethod
     def optimizer_json(risk_free, betas, rit_port_best, pesi_migliori, var_port_best, tickers, sharpe):
 
+        sharpe_yr = sharpe * np.sqrt(12)
+
+        def sharpe_evaluation(sharpe_yr):
+            if sharpe_yr < 0.5:
+                return "Mediocre"
+            elif sharpe_yr < 1.0:
+                return "Accettabile"
+            elif sharpe_yr < 1.5:
+                return "Buono"
+            else:
+                return "Eccellente"
+
+        valutazione = sharpe_evaluation(sharpe_yr)
+
         optimizer_json = {"risk_free": {
             "description": "Indice della Banca della Riserva Federale di Saint Louis (FRED), valore mensile",
             "metrics": risk_free
@@ -101,9 +115,20 @@ class JsonCreator:
                 "description": "Varianza attesa per il portfolio ottimale",
                 "values": var_port_best
             },
-            "sharpe_ratio": {
+            "sharpe_ratio_mensile": {
                 "description": "Rendimento del portfolio rispetto ai rischi, calcolato con ritorni e volatilità mensili",
                 "values": sharpe
+            },
+            "sharpe_ratio_annuale": {
+                "evaluation": valutazione,
+                "values": sharpe_yr,
+                "policy": {
+                    "mediocre": "< 0.5",
+                    "accettabile": "0.5 – 1.0",
+                    "buono": "1.0 – 1.5",
+                    "eccellente": "> 1.5",
+                    "annualization": "monthly * sqrt(12)"
+                }
             }
         }
 

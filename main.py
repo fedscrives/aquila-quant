@@ -19,7 +19,7 @@ logging.basicConfig(
 logger = logging.getLogger(__name__)
 
 print("="*50)
-print("   INVESTMENT ANALYSIS TOOL v0.1 - AI POWERED")
+print("   INVESTMENT ANALYSIS TOOL v0.2 - AI POWERED")
 print("="*50)
 
 class FinancialAnalyzer:

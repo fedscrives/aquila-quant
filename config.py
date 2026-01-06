@@ -3,38 +3,38 @@
 import datetime as dt
 
 # Nome da stampare nel report
-CLIENTE = 'gpt_oos_corretto_pesos'
+CLIENTE = 'gpt_20b_calcoli_precisi'
 
 # LLM usato per l'analisi
-LLM = 'gpt-oss:120b-cloud'
+LLM = 'gpt-oss:20b'
 
 
 # Ticker dei titoli da tracciare
-TICKERS = ['AAPL', 'MU', 'V', 'GE', 'VMC', 'EME', 'TMO', 'RCL', 'CAT']
+TICKERS = ['AMZN', 'MSFT', 'MU', 'PLTR', 'TSMC34.SA', '6033.KL']
 
 # Data di inizio dell'analisi
-START_DATE = dt.datetime(2025, 1,1)
+START_DATE = dt.datetime(2020, 1,1)
 
 # Data di fine dell'analisi
-END_DATE = dt.datetime(2026, 1, 1)
+END_DATE = dt.datetime(2026, 4, 1)
 
 # Numero di anni dell'analisi
-YEARS = 1
+YEARS = 5
 
 # Finestra per il calcolo dei rendimenti
 WINDOW = 5
 
 # Finestra per il calcolo della media mobile veloce
-SMA_LOW = 20
+SMA_LOW = 120
 
 # Finestra per il calcolo della media mobile lenta
-SMA_HIGH = 120
+SMA_HIGH = 200
 
 # Finestra per il calcolo della media mobile esponenziale veloce
-EWM_LOW = 12
+EWM_LOW = 16
 
 # Finestra per il calcolo della media mobile esponenziale lenta
-EWM_HIGH = 16
+EWM_HIGH = 32
 
 # Numero di mesi per il calcolo del portfolio
 FIRST_MONTHS = 108

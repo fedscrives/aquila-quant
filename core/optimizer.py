@@ -80,7 +80,7 @@ class Optimizer:
         if len(tickers) > 3:
             bounds = tuple((0.01, 0.25) for _ in range(len(tickers)))
         else:
-            bounds = tuple((0, 1) for _ in range(len(tickers)))
+            bounds = tuple((0.01, 1) for _ in range(len(tickers)))
 
         opt_results_past = minimize(Optimizer.negative_sharpe_ratio, initial_guess, args=(expected_returns_past, cov_matrix_past),
                                     method='SLSQP', bounds=bounds, constraints=constraints)

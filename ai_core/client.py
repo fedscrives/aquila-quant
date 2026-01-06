@@ -139,7 +139,7 @@ class LlmClient:
         specificando che si tratta dell'analisi del portfolio ideale, indicando anche se:
             - 'portfolio_returns' è maggiore a 'risk_free';
             - 'portfolio_weights' ha dei valori equilibrati e non sbilanciati (ad esempio 0,65 solo su un titolo);
-            - 'sharp_ratio' è più vicino allo 0 (si guadagna meno del risk_free), più vicino ad 1 (valore buono) o uguale/superiore a 2 (valore eccellente).
+            - riporta 'sharpe_ratio_mensile' e 'sharpe_ratio_annuale', specificando per l'annuale la valutazione 
         
         Rispondi in modo asciutto, tecnico e privo di bias ottimisti. Sii brutale nella valutazione dei portfoli.
         Non interpretare valori di prezzo come rendimento, non formulare raccomandazioni di investimento e se una metrica non è definita formalmente, non usarla.

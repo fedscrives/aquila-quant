@@ -67,7 +67,8 @@ AquilaQuant/
 │   └── optimizer.py        # Portfolio optimization logic
 │
 ├── ai_core/
-│   └── client.py           # LLM-based financial analysis
+│   ├── client.py           # LLM-based financial analysis
+│   └── json_creator.py     # Create JSONs for LLM analysis
 │
 ├── reports/
 │   └── Report_Analisi_*.md # Auto-generated investment reports

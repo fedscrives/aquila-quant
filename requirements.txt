@@ -11,3 +11,8 @@ matplotlib
 
 # --- INTEGRAZIONE IA ---
 ollama
+
+# --- API BACKEND ---
+fastapi
+uvicorn[standard]
+pydantic

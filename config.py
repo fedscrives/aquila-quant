@@ -6,7 +6,7 @@ import datetime as dt
 CLIENTE = 'gpt_20b_calcoli_precisi'
 
 # LLM usato per l'analisi
-LLM = 'gpt-oss:20b'
+LLM = 'gpt-oss:20b-cloud'
 
 
 # Ticker dei titoli da tracciare
